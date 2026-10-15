@@ -1,0 +1,74 @@
+/* Общие настройки страницы */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74b9ff, #a29bfe);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Карточка с контентом */
+.card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 400px;
+}
+
+/* Заголовок */
+h1 {
+    color: #2d3436;
+    margin-top: 0;
+    font-size: 26px;
+}
+
+/* Текст */
+p {
+    color: #636e72;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+/* Кнопка */
+button {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Эффект при наведении на кнопку */
+button:hover {
+    background-color: #74b9ff;
+}
+
+/* Эффект при клике */
+button:active {
+    transform: scale(0.96);
+}
+button {
+    min-height: 48px;
+    min-width: 48px;
+    cursor: pointer;
+}
+
+/* Эффект подсветки ТОЛЬКО для мышки */
+@media (hover: hover) {
+    button:hover {
+        background-color: #74b9ff;
+    }
+}
+
+/* Эффект нажатия для телефонов и планшетов */
+button:active {
+    transform: scale(0.95);
+    background-color: #0652dd;
+}
